@@ -1,0 +1,224 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box ;
+}
+
+html{
+    --back-ground-color:#424242;
+    --font-color:white;
+}
+
+body {
+    font-family: "Dosis", sans-serif;;
+    font-optical-sizing: auto;
+    background-color: #616161;
+    margin: 0;
+    
+}
+h1 {
+    padding: 20px;
+    background-color: var(--back-ground-color);
+    text-align: center;
+    margin: 20px auto;
+    max-width:600px;
+    border-top-left-radius: 6px ;
+    border-top-right-radius: 6px ;
+    color: var(--font-color);
+
+}
+
+.quaots{
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: var(--back-ground-color);
+    text-align: center;
+    position: relative;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: var(--font-color);
+    
+
+}
+
+@media (max-width: 768px) {
+    .quaots ,
+    h1 {
+        margin: 10px;
+        max-width: calc(100% - 10px);
+    }
+    .quaots{
+        max-height: 600px;
+    }
+    .quaot-display{
+        height: 300px;
+    }
+    
+}
+
+.quaot-id{
+    font-family: "Pacifico", cursive;
+    position: absolute;
+    left: 12%;
+    top: 9px;
+    background-color: #eee;
+    width: 78px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    color: black;
+    transform: translateX(-50%);
+}
+.author-name {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    right: 2%;
+    top: 9px;
+    background-color: #eee;
+    border-radius: 15px;
+    color: black;
+}
+
+.quaot-display{
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 1.8;
+    border-bottom: 2px solid #EEE;
+    position: relative;
+    min-height: 180px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.quaot-display::before,
+.quaot-display::after {
+    font-size: 50px;
+    position: absolute;
+    color: #aca5a5;
+}
+.quaot-display::before{
+content: "“";
+top: 0;
+left: 0;
+
+}
+.quaot-display::after{
+content: "”";
+bottom: 0;
+right: 0;
+
+}
+/* Buttons  */
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.buttons button{
+    padding: 20px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+
+
+.generate{
+    background-color: green;
+    
+
+}
+.auto{
+    background-color: black;
+}
+.auto:disabled ,
+.stop:disabled{
+    opacity: .5;
+    cursor: no-drop;
+}
+.stop{
+    
+    background-color: #c50d00;
+
+}
+.copy-text {
+    background-color: inherit;
+    width: 90px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 30px;
+    
+}
+
+.copy-text:disabled{
+    opacity: .5;
+    cursor: no-drop;
+}
+.auto-stat{
+
+    text-align: center;
+
+}
+#idQouts{
+    width: 40px;
+}
+
+/*     margin: 20px auto;
+    max-width: 600px;
+    /* padding: 20px; *
+    background: var(--back-ground-color);
+    text-align: center;
+    /* position: relative; *
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* color: var(--font-color); *
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ */
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.Palestine {
+    width: 100px;
+    height: 100px;
+}
+
+footer a {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    color: blue;
+    text-decoration: none;
+}
+
+footer a:hover{
+    opacity: .5;
+}
+
+
+
+
+
+
+
+
